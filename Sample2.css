@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* 横スクロールバーを非表示にするオプション */
+}
+
+.image-container {
+    display: flex;
+    overflow-x: auto; /* 横にスクロールできるようにする */
+    white-space: nowrap; /* 画像を横に並べる */
+    height: 100vh; /* ビューポートの高さを100%に設定 */
+    align-items: center; /* 縦方向に中央揃え */
+}
+
+.image-container img {
+    height: 100px; /* 画像の高さをコンテナの高さに合わせる */
+	width: 100px; 
+    margin: 0 5px; /* 画像間のスペース */
+    object-fit: cover; /* 画像をコンテナに合わせる */
+	display: inline-block; /* インラインブロックで画像を並べる */
+}
