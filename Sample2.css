@@ -19,4 +19,11 @@ body {
     margin: 0 5px; /* 画像間のスペース */
     object-fit: cover; /* 画像をコンテナに合わせる */
 	display: inline-block; /* インラインブロックで画像を並べる */
+	cursor: pointer;
 }
+
+/* 選択された画像に青枠を付ける */
+.image-container img.selected {
+    border: 2px solid blue;
+}
+
